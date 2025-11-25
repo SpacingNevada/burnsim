@@ -1,0 +1,12 @@
+[package]
+name = "burnsim"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+readme.workspace = true
+
+[dependencies]
+common = { path = "../common"}
+gas = { path = "../gas"}
+macros = { path = "../macros" }
