@@ -15,10 +15,10 @@ fn main() {
         .name("Rad Particles".into())
         .heat(20.0);
 
-    let mut sleep_mix = GasMixture::new().gas(&sleeping_agent);
+    let mut sleep_mix = GasMixture::new().gases(vec!(sleeping_agent.clone()));
 
-    sleep_mix = sleep_mix.add_trace_gas_by_name("Test".into());
-    sleep_mix = sleep_mix.add_trace_gas_by_name("Test".into());
+    sleep_mix.add_trace_gas_by_name("Test".into());
+    sleep_mix.add_trace_gas_by_name("Test".into());
 
     println!("{}", answer());
 
